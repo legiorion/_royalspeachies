@@ -1,199 +1,153 @@
 * {
-	padding: 0;
-	margin: 0;
-	font-family: 'Questrial', sans-serif;
-	color: midnightblue;
+padding: 0;
+margin: 0;
+font-family: serif;
 }
-header {
-	height: 70px;
-	background-image: url('../img/bg2.jpg');
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.sosmed {
+	padding: 5px 0;
+	background-color: orange;
+}
+.sosmed ul li {
+	display: inline-block;
+	color: white;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+.container:after {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+header h1 {
+	float: left;
+	padding: 15px 0;
+	color: orange;
 }
 header ul {
 	float: right;
 }
-header h1 {
-	display: inline-block;
-	float: left;
-	padding: 18px 24px;
-	text-transform: uppercase;
-	}
-header h1 a {
-	transition: .3s;
-}
-header h1 a:hover {
-	color: cadetblue;
-}
 header ul li {
-	padding: 26px 24px;
 	display: inline-block;
 }
 header ul li a {
-	transition: .3s;
+	padding: 25px 20px;
+	display: inline-block;
 }
 header ul li a:hover {
-	color: cadetblue;
+	background-color: orange;
+	color: white;
 }
-a {
-	text-decoration: none;
-}
-.container {
-	width: 90%;
-	margin: 0 auto;
-}
-.container:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-.mobile-menu {
-	float: right;
-	display: none;
-	padding: 18px;
-}
-.mobile-menu:hover {
-	cursor: pointer;
-}
-#check {
-	display: none;
-}
-.sidebar {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: -300px;
-	width: 300px;
-	background-image: url('../img/bg1.jpg');
-	background-size: cover;
-	transition: .3s;
-}
-.sidebar ul li a {
-	color: floralwhite;
-}
-.sidebar ul li {
-	padding: 24px;
-	transition: .3s;
-	transition-property: background-image;
-}
-.sidebar ul li:hover {
-	background-color: cadetblue ;
-}
-#check:checked ~ .sidebar {
-	left: 0;
+.legi {
+	background-color: orange;
+	color: white;
 }
 .banner {
-	background-image: url('../img/bg1.jpg');
+	height: 100vh;
+	background-image: url('../img/banner.jpg');
 	background-size: cover;
-	padding: 150px 0;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner:after {
+	display: block;
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 .banner h2 {
-	color: midnightblue;
-	margin-bottom: 15px;
-}
-.banner p {
-	color: midnightblue;
-	font-size: 18px;
-}
-.banner-left {
-	padding: 24px;
-}
-.banner img {
-	width: 150px;
-	height: 150px;
-	padding-bottom: 100px;
-	animation: legi 2s ease infinite;
-	}
-
-@keyframes legi {
-	0% {
-		width:  150px;
-	}
-	50% {
-		width: 300px;
-		height: 150px;
-	}
-	100% {
-		width: 300px;
-		height: 300px;
-	}
+	color: white;
+	padding: 20px 25px;
+	border: 3px solid white;
 }
 section {
 	padding: 50px 0;
 }
-section h3 {
-	padding-bottom: 20px;
-	text-align: center;
-	margin: 20px;
+.LOGIN {
+	color: orange;
+	height: 100vh;
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.container p {
-	text-align: justify;
-	text-indent: 30px;
-	line-height: 30px;
-	margin-bottom: 15px;
+.LOGIN h2 {
+	color: white;
+	padding: 40px 45px;
+}
+.LOGIN:after {
+	display: block;
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid orange;
+    color: white;
+    font-size: 20px;
+}
+.container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:orange;
+    font-size: 18px;
+    color: white;
+}
+.container label{
+    text-align: left;
+    color: orange;
 }
 
-@media (max-width: 786px) {
-	.mobile-menu {
-		display: block;
-	}
-	header ul {
-		display: none;
-	}
-}
-#Profile {
-	background-image:url('../img/bg1.jpg') ;
+.shop {
+	color: black;
+	background-color: orange;
 	background-size: cover;
-	padding: 200px 0;
-	font-size: 20px;
+	position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-#Hobby {
-	background-image:url('../img/bg1.jpg') ;
-	background-size: cover;
-	padding: 110px 0;
-	font-size: 20px;
-}	
-.legii img {
-	width: 200px;
-	height: 200px;
-	padding: 50px 0;
-	transition: right;
-}
-
-#Education {
-	background-image:url('../img/bg1.jpg') ;
-	background-size: cover;
-	padding: 250px 0;
-	font-size: 20px;
-	}
-#Contact {
-	background-image:url('../img/bg1.jpg') ;
-	background-size: cover;
-	padding: 250px 0;
-	font-size: 20px;
-}
-.contact {
-	position: absolute;
-	text-align: center;
-	width: 100%;
-}
-.contact ul li {
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	font-size: 50px;
-}
-.education {
-	position: absolute;
-	text-align: center;
-	width: 100%;
-}
-.education ul li {
-	display: inline-block;
-	width: 90px;
-	height: 90px;
-	font-size: 50px;
+.container button {
+	width: 10%;
+	height: 10%;
+    padding: 5px 0;
+    border: none;
+    background-color:brown;
+    font-size: 15px;
+    color: white;
 }
 footer {
 	padding: 20px 0;
-	background-image: url('../img/bg2.jpg');
+	background: brown;
 	text-align: center;
+}
+.bg-loader {
+	background-color: brown;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right:0;
+	bottom: 0;
+	z-index: 9999;
 }
